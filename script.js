@@ -23,13 +23,13 @@ const drawGame = (userchoice,compchoice) => {
 
 const shoWinner = (userwin,userchoice,compchoice) => {
     if (userwin) {
-        msg.innerText = `You Win!`;
+        msg.innerText = `Win!`;
         msg.style.backgroundColor = "green";
         userScore++;
         userscore.innerText = userScore;
     }
     else {
-        msg.innerText = `computer Win!`;
+        msg.innerText = `loss!`;
         msg.style.backgroundColor = "red";
         compScore++;
         compscore.innerText = compScore;
