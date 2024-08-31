@@ -16,20 +16,20 @@ const gencomchoice = () => {
 
 
 const drawGame = (userchoice,compchoice) => {
-    msg.innerText = `Draw!${userchoice} equals ${compchoice}`;
+    msg.innerText = `Draw!`;
     msg.style.backgroundColor = "black";
 }
 
 
 const shoWinner = (userwin,userchoice,compchoice) => {
     if (userwin) {
-        msg.innerText = `You Win!${userchoice} beats ${compchoice}`;
+        msg.innerText = `You Win!`;
         msg.style.backgroundColor = "green";
         userScore++;
         userscore.innerText = userScore;
     }
     else {
-        msg.innerText = `computer Win!${compchoice} beats ${userchoice}`;
+        msg.innerText = `computer Win!`;
         msg.style.backgroundColor = "red";
         compScore++;
         compscore.innerText = compScore;
